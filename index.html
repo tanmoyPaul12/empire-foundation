@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE EMPIRE FOUNDATION | Social Welfare Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Emergency SOS Button -->
+    <div class="sos-container">
+        <button class="sos-btn" id="sosBtn">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>EMERGENCY SOS</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="logo-text">
+                            <span class="logo-main">EMPIRE</span>
+                            <span class="logo-sub">FOUNDATION</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-donate">Donate Now</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-certificate"></i>
+                <span>Empowering Communities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Together We Can</span>
+                <span class="title-highlight">Make A Difference</span>
+            </h1>
+            <p class="hero-description">
+                THE EMPIRE FOUNDATION is a comprehensive social welfare platform connecting citizens, NGOs, volunteers, 
+                and local authorities. Join us in building a stronger, more compassionate society.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Services
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-users"></i>
+                    Join as Volunteer
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-label">Lives Impacted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1200">0</span>
+                    <span class="stat-label">Active Volunteers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Partner NGOs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">/7 Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-ambulance"></i>
+                <span>Emergency</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-hand-holding-heart"></i>
+                <span>Volunteer</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-blood-drop"></i>
+                <span>Blood Bank</span>
+            </div>
+            <div class="floating-card card-4">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Skills</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Building Bridges, <span class="highlight">Creating Change</span></h2>
+                <p class="section-subtitle">We believe in the power of community to transform lives</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Community volunteers">
+                        <div class="image-accent"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of<br>Service</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>
+                        THE EMPIRE FOUNDATION is a comprehensive, multi-service social welfare platform designed to 
+                        connect citizens, NGOs, volunteers, and local authorities on a single digital platform.
+                        We aim to address critical social challenges through technology and community engagement.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Emergency Assistance with SOS</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Transparent NGO Activities</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Community-Led Initiatives</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Govt. Scheme Guidance</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive <span class="highlight">Social Solutions</span></h2>
+                <p class="section-subtitle">Nine powerful services to transform communities</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="emergency">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Assistance</h3>
+                    <p>Rapid response system with SOS alerts and real-time location tracking for immediate help.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-location-dot"></i> GPS Tracking</span>
+                        <span><i class="fas fa-bell"></i> Instant Alerts</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="ngo">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>NGO & Volunteer Network</h3>
+                    <p>Connect with trusted NGOs, participate in events, and contribute through donations.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-calendar"></i> Event Calendar</span>
+                        <span><i class="fas fa-donate"></i> Easy Donations</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="waste">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Waste & Civic Issues</h3>
+                    <p>Report civic problems, track complaints, and contribute to a cleaner environment.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-map-marker-alt"></i> Location Based</span>
+                        <span><i class="fas fa-chart-line"></i> Track Status</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="blood">
+                    <div class="service-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Blood Donor Directory</h3>
+                    <p>Emergency medical support with a network of verified blood donors across the region.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-search"></i> Quick Search</span>
+                        <span><i class="fas fa-bell"></i> Donorship Alerts</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="skills">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Skill Development</h3>
+                    <p>Youth employment support with training programs, job listings, and career guidance.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-book"></i> Free Courses</span>
+                        <span><i class="fas fa-briefcase"></i> Job Portal</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="protection">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Elderly & Child Protection</h3>
+                    <p>Safe reporting system for vulnerable groups with immediate action protocols.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-user-shield"></i> 24/7 Helpline</span>
+                        <span><i class="fas fa-lock"></i> Anonymous</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="rural">
+                    <div class="service-icon">
+                        <i class="fas fa-house-chimney"></i>
+                    </div>
+                    <h3>Rural Infrastructure</h3>
+                    <p>Portal for reporting rural infrastructure issues and tracking government action.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-road"></i> Road Issues</span>
+                        <span><i class="fas fa-water"></i> Water & Power</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="food">
+                    <div class="service-icon">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <h3>Food Sharing Network</h3>
+                    <p>Connect donors with those in need. Fight hunger through community sharing.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-hand-holding-dollar"></i> Free Service</span>
+                        <span><i class="fas fa-truck"></i> Delivery</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card" data-service="govt">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Scheme Guidance</h3>
+                    <p>AI-powered system to guide citizens through government schemes and benefits.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-brain"></i> Smart Matching</span>
+                        <span><i class="fas fa-file-shield"></i> Document Help</span>
+                    </div>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Our Impact</span>
+                <h2 class="section-title">Transforming <span class="highlight">Lives Every Day</span></h2>
+                <p class="section-subtitle">Real results from our community-driven initiatives</p>
+            </div>
+            <div class="impact-stats">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <div class="impact-number" data-count="50000">0</div>
+                    <div class="impact-label">People Helped</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-drop"></i>
+                    </div>
+                    <div class="impact-number" data-count="8500">0</div>
+                    <div class="impact-label">Blood Units Donated</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="impact-number" data-count="3200">0</div>
+                    <div class="impact-label">Jobs Created</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="impact-number" data-count="120000">0</div>
+                    <div class="impact-label">Meals Distributed</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="impact-number" data-count="450">0</div>
+                    <div class="impact-label">Tons Waste Cleared</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join thousands of volunteers and donors who are transforming communities every day.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white">
+                        <i class="fas fa-hand-heart"></i>
+                        Become a Volunteer
+                    </button>
+                    <button class="btn btn-outline-white">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Address</h4>
+                            <p>123 Community Center, Sector 15<br>New Delhi, India - 110001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210<br>+91 1800 123 4567 (Toll Free)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@sahayak247.org<br>support@sahayak247.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest">
+                                <option value="">Select Interest</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="donor">Donor</option>
+                                <option value="partner">Partner NGO</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">EMPIRE</span>
+                            <span class="logo-sub">FOUNDATION</span>
+                        </div>
+                    </div>
+                    <p>Empowering communities through technology and compassion. Together, we build a better tomorrow.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#impact">Our Impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Emergency Help</a></li>
+                        <li><a href="#">Blood Donation</a></li>
+                        <li><a href="#">Skill Development</a></li>
+                        <li><a href="#">Food Sharing</a></li>
+                        <li><a href="#">Govt Schemes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on our latest initiatives.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 THE EMPIRE FOUNDATION. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Emergency Modal -->
+    <div class="modal" id="emergencyModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="emergency-alert">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Emergency SOS Activated</h2>
+                <p>Your location has been shared with emergency services and nearby volunteers.</p>
+            </div>
+            <div class="emergency-actions">
+                <button class="emergency-btn ambulance">
+                    <i class="fas fa-ambulance"></i>
+                    <span>Ambulance</span>
+                </button>
+                <button class="emergency-btn police">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Police</span>
+                </button>
+                <button class="emergency-btn fire">
+                    <i class="fas fa-fire"></i>
+                    <span>Fire</span>
+                </button>
+                <button class="emergency-btn blood">
+                    <i class="fas fa-heart-pulse"></i>
+                    <span>Blood</span>
+                </button>
+            </div>
+            <div class="emergency-info">
+                <p><strong>Helpline:</strong> 1800-123-4567</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
