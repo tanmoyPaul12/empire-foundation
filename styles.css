@@ -220,7 +220,7 @@ img {
    ======================================== */
 .sos-container {
     position: fixed;
-    bottom: 36px;
+    bottom: 30px;
     right: 20px;
     z-index: 999;
 }
@@ -499,7 +499,7 @@ img {
 
 .card-3 i {
     background: rgba(244, 162, 97, 0.1);
-    color: var(--warning-color);
+    color: rgb(198, 47, 47);
 }
 
 .card-4 {
@@ -1491,7 +1491,9 @@ img {
 .emergency-info strong {
     color: var(--primary-color);
 }
-
+.developer:hover{
+    color: hsl(25, 82%, 61%);
+}
 /* ========================================
    Responsive Design
    ======================================== */
@@ -1626,16 +1628,21 @@ img {
     }
     
     .footer-bottom {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: start;
         text-align: center;
+        gap: 5px;
+
     }
     
     .sos-container {
         bottom: 20px;
         right: 20px;
     }
-    
+    .sos-container.move-up{
+        bottom: 120px;
+    }
     .sos-btn {
         padding: 14px 22px;
         font-size: 13px;
