@@ -140,6 +140,24 @@ function initEmergencyModal() {
     });
 }
 
+
+// ========moveup bottom sos=============
+const sosContainer = document.querySelector(".sos-container");
+const footer = document.querySelector(".footer");
+
+window.addEventListener("scroll", () => {
+
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (footerRect.top < windowHeight) {
+        const overlap = windowHeight - footerRect.top;
+        sosContainer.style.bottom = overlap + 20 + "px";
+    } else {
+        sosContainer.style.bottom = "20px";
+    }
+
+});
 // ========================================
 // Contact Form
 // ========================================
