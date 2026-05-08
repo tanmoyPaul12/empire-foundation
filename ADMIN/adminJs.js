@@ -293,7 +293,7 @@ async function loadVolunteers() {
   const container = document.getElementById('volunteersTable');
 
   try {
-    const res = await fetch('http://localhost:5000/api/volunteer');
+    const res = await fetch(`${API_BASE}/api/volunteer`);
     const result = await res.json();
 
     const data = result.volunteers;
@@ -355,14 +355,14 @@ async function loadVolunteers() {
 }
 
 async function approveVolunteer(id) {
-  await fetch(`http://localhost:5000/api/volunteer/${id}/approve`, {
+  await fetch(`${API_BASE}/api/volunteer/${id}/approve`, {
     method: 'PATCH'
   });
   loadVolunteers();
 }
 
 async function rejectVolunteer(id) {
-  await fetch(`http://localhost:5000/api/volunteer/${id}/reject`, {
+  await fetch(`${API_BASE}/api/volunteer/${id}/reject`, {
     method: 'PATCH'
   });
   loadVolunteers();
