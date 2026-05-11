@@ -55,6 +55,9 @@ if (volunteerForm) {
         msg.style.color = "green";
         msg.innerText = result.message;
         volunteerForm.reset();
+        setTimeout(()=>{
+            window.location.replace('../index.html');
+        },600)
       } else {
         msg.style.color = "red";
         msg.innerText = result.message;
@@ -339,6 +342,8 @@ function initServiceCards() {
         const learnMoreBtn = card.querySelector('.service-btn');
         
         if (learnMoreBtn) {
+             // Skip if it's already a link — let the href handle it
+            if (learnMoreBtn.tagName === 'A' && learnMoreBtn.getAttribute('href')) return;
             learnMoreBtn.addEventListener('click', () => {
                 const service = card.dataset.service;
                 handleServiceClick(service);
@@ -685,10 +690,11 @@ if (wasteForm) {
 
       if (data.success) {
         msg.style.color = 'green';
-        msg.innerText = 'Waste report submitted successfully!';
+        msg.innerText = '✅ Waste report submitted! Redirecting...';
         setTimeout(() => {
-            msg.innerText = '';
-        }, 3000);
+            // msg.innerText = '';
+            window.location.replace('../index.html');
+        }, 600);
         
       }
     else {
